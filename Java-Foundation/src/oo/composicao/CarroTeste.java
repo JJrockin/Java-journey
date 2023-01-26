@@ -1,0 +1,47 @@
+package oo.composicao;
+
+public class CarroTeste {
+	
+	public static void main(String[] args) {
+		
+		// OneToOne
+		Carro c1 = new Carro();
+		System.out.println(c1.estarLigado());
+		
+		c1.ligar();
+		System.out.println(c1.estarLigado());
+		
+		System.out.println(c1.motor.giros());
+		
+		c1.acelerar();
+		c1.acelerar();
+		c1.acelerar();
+		c1.acelerar();
+		c1.acelerar();
+		c1.acelerar();
+		c1.acelerar();
+		c1.acelerar();
+		c1.acelerar();
+		c1.acelerar();
+		
+		System.out.println(c1.motor.giros());
+		
+		c1.frear();
+		c1.frear();
+		c1.frear();
+		c1.frear();
+		c1.frear();
+		c1.frear();
+		c1.frear();
+		c1.frear();
+		
+		// Faltou Encapsulamento e por isso a linha abaixo
+		// pode existir, o usuario colocar manualmente tal valor
+		// c1.motor.fatorInjecao = -30;
+		
+		System.out.println(c1.motor.giros());
+		
+		
+	}
+
+}
