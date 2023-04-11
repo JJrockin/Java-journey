@@ -1,6 +1,15 @@
+conexao.properties
+/avancado/
+/arrays/
+/classe/
+/collections/
+/controle/
+/excecao/
+/fundamentos/
+/generics/
+/jdbc/
+/lambdas/
 /oo/
 /padroes/
 /streams/
 /swing/
-/jdbc/
-/conexao.properties
